@@ -2,7 +2,7 @@ from db import db
 
 
 class CustomerModel(db.Model):
-    __tablename__ = "customers"
+    __tablename__ = "Customers"
     CustomerID = db.Column(db.String(5), primary_key=True)
     CompanyName = db.Column(db.String(40))
     ContactName = db.Column(db.String(30))

@@ -4,9 +4,9 @@ from resources.customer import Customer, CustomerList
 from resources.testing import Testing
 from db import db
 
-application = app = Flask(__name__)
+app = Flask(__name__)
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://lingwm:qwer1234@mydbinstance.clmilbugc71o.us-east-1.rds.amazonaws.com/northwind"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://lingwm:qwer1234@northwind.cuwveprzzhbn.us-west-2.rds.amazonaws.com:3306/northwind"
 api = Api(app)
 
 api.add_resource(Customer, "/customer/<string:customerid>")
